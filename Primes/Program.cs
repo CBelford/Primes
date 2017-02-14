@@ -18,13 +18,13 @@ namespace Primes
 
             int start = 2;
             int baseValue = 2;
-            int maxPower = 20;
+            int maxPower = 18;
             Stopwatch sw = new Stopwatch();
 
             for (int power = 1; power <= maxPower; power++)
             {
                 int end = Convert.ToInt32(Math.Pow(baseValue, power));
-                Console.WriteLine("Calculating primes between {0} and {1}", start.ToString("N0"), end.ToString("N0"));
+                Console.WriteLine("Calculating primes between {0} and {1} = 2^{2}", start.ToString("N0"), end.ToString("N0"), power.ToString("N0"));
 
                 sw.Start();
 
